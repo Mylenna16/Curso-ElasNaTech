@@ -1,0 +1,176 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #FFFFFF;
+	font-family: Courier New, Monaco, monospace;
+	min-height: 100%;
+    display: flex;
+	flex-direction: column
+}
+
+/* layout */
+
+#area-cabecalho{
+	background: #FED4A0;
+	padding: 10px;
+	height: 100px;
+}
+
+#formatação{
+	float: left;
+	width: 100px;
+}
+
+#area-menu{
+	font-size: 20px;
+	padding: 38px;
+	text-align: right;	
+}
+
+a{
+	text-decoration: none;
+	color: #2A1B0A;
+}
+
+#area-menu a:link, #area-menu a:visited {
+	padding: 15px 8px;
+	color: white;
+}
+
+#area-menu a:hover {
+	background: white;
+	color: #FED4A0;
+}
+
+#area-contato{
+	background-image: url('imagens/fundo2.jpg');
+	background-size: cover;
+	width: 100%;
+	margin-top: 70px;
+	height: 500px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.informações{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#rodapé{
+	background: #FED4A0;
+	height: 50px;
+	margin-top: 80px;
+	text-align: center;
+	padding: 15px;
+	color: white;
+	font-size: 20px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+#formatação-logo-rodapé{
+	float: left;
+	width: 60px;
+}
+
+/* formatações gerais */
+
+h1{
+	display: flex;
+	align-self: start;
+	position: absolute;
+	font-size: 50px;
+	padding-top: 30px;
+	font-family: FreeMono, monospace;
+}
+
+.letra{
+	color: #2A1B0A;
+	font-size: 25px;
+	padding-bottom: 10px;
+}
+
+.letra2{
+	color: #2A1B0A;
+	padding-left: 55px;
+	padding-right: 55px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.formatação-número{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: underline;
+}
+
+@media all and (max-width: 768px) {
+    #area-menu {
+        visibility: hidden;
+    } 
+
+    #area-cabecalho {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        padding: 0px;
+    }
+
+    #formatação {
+        text-align: center;
+        margin: auto;
+        float: none;
+        transform: translateX(-5%);
+    }
+
+    #formatação-logo-rodapé {
+		visibility: hidden;
+	}
+
+	#rodapé {
+		text-align: center;
+		font-size: 12px;
+	}
+}
+
+@media all and (max-width: 870px) {
+	#area-contato {
+		display: flex;
+        flex-direction: column;
+        align-items: center;
+	}
+
+	.informações {
+		display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 20px;
+	}
+
+	h1 {
+		visibility: hidden;
+	}
+	.letra, .letra2, .formatação-número {
+		 font-size: 15px;
+		 margin: 0
+	}
+}
+
+@media all and (max-width: 235px) {
+	.informações {
+		margin: 0;
+	}
+
+	h1 {
+		visibility: hidden;
+		font-size: 0;
+	}
+}

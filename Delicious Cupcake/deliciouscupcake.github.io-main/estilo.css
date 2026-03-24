@@ -1,0 +1,244 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #FFFFFF;
+	font-family: Courier New, Monaco, monospace;
+	margin: 0;
+}
+
+/* layout */
+
+#area-cabecalho{
+	background: #FED4A0;
+	padding: 10px;
+	height: 100px;
+}
+
+#formatação{
+	float: left;
+	width: 100px;
+}
+
+#area-menu{
+	font-size: 20px;
+	padding: 38px;
+	text-align: right;	
+}
+
+a{
+	text-decoration: none;
+}
+
+#area-menu a:link, #area-menu a:visited {
+	padding: 15px 8px;
+	color: white;
+}
+
+#area-menu a:hover {
+	background: white ;
+	color: #FDD790;
+}
+
+#area-cardapio{
+	background-color: #FED4A0;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 69%;
+	margin: 20px auto;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.cupcake{
+	background: white;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 20%;
+	height: 370px;
+	margin: 28px;
+	padding: 33px;
+	padding-bottom: 30px;
+	border-radius: 10px;
+}
+
+#area-principal {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	max-width: 100%;
+}
+
+.container {
+	width: 400px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	height: 200px;
+	background-color: #FED4A0;
+	color: #2A1B0A;
+	border-radius: 10px;
+}
+
+a button {
+	color: white;
+	background: transparent;
+	padding: 8px;
+	border-radius: 10px;
+	border: 1px solid #2A1B0A;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+#lista {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url("imagens/fundo.jpg");
+	width: 400px;
+	height: 200px;
+	font-size: 1.2em;
+	border-radius: 10px;
+}
+
+li {
+	padding: 10px;
+	color: #2A1B0A;
+}
+
+#rodapé{
+	background: #FED4A0;
+	height: 50px;
+	text-align: center;
+	margin-top: 50px;
+	padding: 20px;
+	color: white;
+	font-size: 20px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+#formatação-logo-rodapé{
+	float: left;
+	width: 60px;
+}
+
+
+/* Formatação geral */
+
+.letra{
+	font-size: 15px;
+	color: #2A1B0A;
+	text-align: center;
+}
+
+.letra2{
+	color: #2A1B0A;
+	text-align: left;
+}
+
+#letra3{
+	color: #2A1B0A;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.formatação-imagens{
+	width: 50%;
+	height: 30%;
+}
+
+
+ul {
+	margin: 0;
+}
+
+h1{
+	margin-top: 100px;
+	text-align: center;
+	color: #2A1B0A;
+	font-size: 30px;
+}
+
+@media all and (max-width: 1080px) {
+	#area-cardapio{
+		display: flex;
+        flex-direction: column;
+        align-items: center;
+	}
+
+	.cupcake{
+		display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+	}
+
+	h1 {
+		font-size: 20px;
+	}
+
+	#area-principal {
+		display: flex;
+        flex-direction: column;
+        align-items: center;
+	}
+
+	.container {
+		margin-bottom: 20px;
+	}
+
+	.container, #lista {
+		width: 300px;
+		font-size: 13px;
+	}
+}
+
+@media all and (max-width: 382px) {
+	.container, #lista {
+		width: 100%;
+	}
+
+	a button {
+		padding: 3px;
+		font-size: 10px;
+	}
+	#letra3 {
+		font-size: 10px;
+	}
+	
+	#formatação-logo-rodapé {
+		visibility: hidden;
+	}
+	#rodapé {
+		text-align: center;
+		font-size: 12px;
+	}
+}
+
+@media all and (max-width: 768px) {
+    #area-menu {
+        visibility: hidden;
+    } 
+
+    #area-cabecalho {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        padding: 0px;
+    }
+
+    #formatação {
+        text-align: center;
+        margin: auto;
+        float: none;
+        transform: translateX(-5%);
+    }
+}
