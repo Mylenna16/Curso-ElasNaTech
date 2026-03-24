@@ -24,4 +24,4 @@ Este repositório reúne todos os projetos desenvolvidos durante o curso ElasNaT
 
 ## 💻 Como acessar
 
-Clique nos links acima para visualizar cada exercício diretamente pelo GitHub Pages ou acessar os PDFs.
+Clique nos links acima para visualizar cada projeto pelo GitHub Pages.
