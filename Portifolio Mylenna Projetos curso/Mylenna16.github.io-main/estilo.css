@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    width: 100%;
+    background: #5B395E;
+    color: white;
+}
+
+header {
+    background: #14001A;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1em;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    font-size: 1.8em;
+    margin-right: 1.8em;
+}
+
+h1 {
+    margin-left: 1em;
+}
+
+a {
+    color: white;
+}
+
+main {
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+main .main-content h2 {
+    margin-bottom: 2%;
+}
+
+main .main-content .descrição .eu {
+    width: 80%;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.eu {
+    line-height: 1.4em;
+}
+
+.botãocurriculo {
+    margin-top: 30px;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    color: white;
+    background: #14001A;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: rgba(49, 0, 31, 0.4) 0px 5px, rgba(24, 0, 15, 0.3) 0px 10px, rgba(83, 0, 53, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+main figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main figure img {
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    margin-bottom: 6%;
+    border: 1px solid white;
+    transition: 0.2s ease-in-out;
+}
+
+main figure img:hover {
+    box-shadow: 0px 0px 6px white;
+    cursor: pointer;
+}
+
+#projetos {
+    text-align: center;
+}
+
+.container-slider {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    gap: 1rem;
+}
+
+.container-imagens {
+    position: relative;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+}
+
+.slider {
+    position: absolute;
+    opacity: 0;
+    transition: opacity .2s;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.on {
+    opacity: 1;
+}
+
+#prev-button,
+#next-button {
+    width: 30px;
+    position: relative;
+    top: 10px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#prev-button img,
+#next-button img {
+    width: 100%;
+    height: 100%;
+}
+
+#prev-button {
+    transform: rotate(180deg);
+}
+
+#formatação {
+    background: #80666E;
+    margin-top: 70px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+h4 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 35px;
+    font-weight: 900;
+}
+
+#descriçãodosprojetos {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+}
+
+.pjdescrição {
+    text-align: justify;
+    width: 40%;
+    margin: 30px;
+    line-height: 1.4em;
+}
+
+h5 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.formataçãofm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px 45px;
+    background: #20042A;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+#formataçãoletra {
+    color: white;
+    font-size: 1.7rem;
+    margin: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    color: white;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+input {
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+input:focus {
+    border-radius: 16px;
+}
+
+textarea {
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+
+textarea:focus {
+    border-radius: 16px;
+}
+
+#botãoenviar {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+#botãoenviar:hover {
+    background: white;
+    color: #20042A;
+    border-radius: 16px;
+}
+
+#formataçãoobg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #20042A;
+    flex-direction: column;
+}
+
+#texto {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#paragrafo {
+    color: white;
+    margin-bottom: 50px;
+}
+
+#botãoobg {
+    padding: 15px 55px;
+    background: white;
+    color: #20042A;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+#botãoobg:hover {
+    border-radius: 16px;
+}
+
+#footer {
+    background: #14001A;
+    text-align: center;
+    padding: 20px;
+    margin-top: 70px;
+}
+
+@media (max-width: 1200px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-content {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 10%;
+    }
+
+    main .main-content .descrição {
+        text-align: center;
+    }
+
+    .eu .descrição {
+        margin-right: 0px;
+    }
+
+    main .main-content .descrição .eu {
+        width: 100%;
+    }
+
+    figure {
+        margin-bottom: 40px;
+    }
+
+    .container-slider {
+        width: 70%;
+        height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+}
+
+@media (max-width: 870px) {
+
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header nav {
+        margin-top: 24px;
+    }
+
+    header nav a {
+        font-size: 1.2em;
+    }
+
+    main figure img {
+        width: 250px;
+        height: 250px;
+    }
+
+    #descriçãodosprojetos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .pjdescrição {
+        text-align: center;
+        width: 80%;
+        line-height: 1.4em;
+        font-size: 20px;
+    }
+
+    .container-slider {
+        width: 70%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+
+}
