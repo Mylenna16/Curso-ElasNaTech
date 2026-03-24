@@ -1,0 +1,147 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kenia&family=Lora:ital@1&family=Montserrat:ital,wght@0,400;1,200&family=Mooli&family=Playfair+Display:ital@1&family=Roboto:wght@100&display=swap');
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#cabeçalho {
+	background: #E6E6E6;
+	padding: 30px;
+	padding-top: 40px;
+	text-align: center;
+	color: black;
+	font-family: "Times New Roman", Times, serif;
+}
+
+#capa {
+	background-image: url("./imagens/força.jpg");
+	width: 100%;
+	height: 800px;
+	background-size: cover;
+	text-align: center;
+	color: white;
+	padding: 20px;
+}
+
+.subtitulo {
+	font-size: 20px;
+	font-weight: 900;
+}
+
+main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5%;
+	max-width: 100%;
+}
+
+main .container-mnt h3 {
+	margin-bottom: 5%;
+}
+
+main .container-mnt .descriçõesmnt {
+	width: 70%;
+	font-size: 20px
+}
+
+main figure {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+main figure img {
+	width: 320px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	border-radius: 5px;
+}
+
+#descriçãojean {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+}
+
+h3 {
+	font-size: 50px;
+	padding-bottom: 20px;
+	font-family: 'Lora', serif;
+}
+
+h4 {
+	font-size: 50px;
+	padding-bottom: 20px;
+	font-family: 'Lora', serif;
+	text-align: center;
+}
+
+#fotojean {
+	width: 40%;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	margin-bottom: 60px;
+}
+
+#textosjs {
+	width: 80%;
+	font-size: 20px;
+}
+
+.importância {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Playfair Display', serif;
+}
+
+.importância2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 80%;
+}
+
+.letra {
+	font-size: 20px;
+	font-weight: 900;
+	margin-bottom: 40px;
+}
+
+.icone {
+	width: 12%;
+	margin-left: 30px;
+	margin-top: 7px;
+}
+
+footer {
+	background: #E6E6E6;
+	color: #151515;
+	margin-top: 50px;
+	text-align: center;
+	padding: 12px;
+}
+
+@media (max-width: 1220px) {
+	main {
+		flex-direction: column;
+        align-items: center;
+        justify-content: center;
+	}
+
+	main .container-mnt .descriçõesmnt {
+		text-align: center;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 60px;
+	}
+}
